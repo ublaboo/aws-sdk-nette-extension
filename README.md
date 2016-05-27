@@ -8,7 +8,6 @@ Download extension using composer
 ```
 composer require ublaboo/aws-sdk-nette-extension
 ```
-	
 
 Register extension in your config.neon file:
 
@@ -19,12 +18,18 @@ extensions:
 
 ## Configuration
 
-Configure extension in your config.neon file:
+Configure extension in your `config.neon` file:
 
 ``` yaml
 aws:
 	region: eu-west-1
 	version: latest
+```
+
+And put your key and secret in your `config.local.neon` file (which should not be versioned)
+
+``` yaml
+aws:
 	credentials:
 		key: your_access_key
 		secret: your_secret_access_key
@@ -32,35 +37,10 @@ aws:
 			
 ## Usage
 
-Now you can use the S3Client instance either in Presenter:
+Ideally create some services wrapping the S3 client with your logic inside them
 
 ```php
-class HomepagePresenter extends Presenter
-{
-
-	/**
-	 * @var \Aws\S3\S3Client
-	 * @inject
-	 */
-	public $s3;
-
-
-	public function actionDefault()
-	{
-		$this->s3->putObject([
-			'Bucket' => 'YourBucker',
-			'Key' => 'YourObjectKey',
-			'Body' => fopen('/path/to/file', 'r')
-		]);
-	}
-
-}
-```
-
-Or in some other service:
-
-```php
-class s3Service
+class S3Service
 {
 
 	/**
@@ -82,6 +62,27 @@ class s3Service
 			'Key'        => 'YourObjectKey',
 			'SourceFile' => $path_to_file,
 		]);
+	}
+
+}
+```
+
+And use them in your presenters:
+
+```php
+class HomepagePresenter extends Presenter
+{
+
+	/**
+	 * @var S3Service
+	 * @inject
+	 */
+	public $service;
+
+
+	public function actionDefault()
+	{
+		$this->service->save('/path/to/file');
 	}
 
 }
