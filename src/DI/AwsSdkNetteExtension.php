@@ -18,7 +18,7 @@ class AwsSdkNetteExtension extends Nette\DI\CompilerExtension
 		'version' => 'latest',
 		'credentials' => [
 			'key' => NULL,
-			'secret': NULL
+			'secret' => NULL
 		]
 	];
 
