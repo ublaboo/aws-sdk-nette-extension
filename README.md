@@ -12,7 +12,7 @@ composer require ublaboo/aws-sdk-nette-extension
 
 Register extension in your config.neon file:
 
-```
+``` yaml
 extensions:
 	aws: Ublaboo\AwsSdkNetteExtension\DI\AwsSdkNetteExtension
 ```
@@ -21,7 +21,7 @@ extensions:
 
 Configure extension in your config.neon file:
 
-```
+``` yaml
 aws:
 	region: eu-west-1
 	version: latest
