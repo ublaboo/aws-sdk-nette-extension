@@ -1,7 +1,7 @@
 # aws-sdk-nette-extension
 A Nette extension for the AWS SDK for PHP http://aws.amazon.com/sdkforphp/
 
-##Installation
+## Installation
 
 Download extension using composer
 
@@ -11,7 +11,7 @@ composer require ublaboo/aws-sdk-nette-extension
 
 Register extension in your config.neon file:
 
-``` yaml
+``` 
 extensions:
 	aws: Ublaboo\AwsSdkNetteExtension\DI\AwsSdkNetteExtension
 ```
@@ -20,7 +20,7 @@ extensions:
 
 Configure extension in your `config.neon` file:
 
-``` yaml
+``` 
 aws:
 	region: eu-west-1
 	version: latest
@@ -28,7 +28,7 @@ aws:
 
 And put your key and secret in your `config.local.neon` file (which should not be versioned)
 
-``` yaml
+``` 
 aws:
 	credentials:
 		key: your_access_key
