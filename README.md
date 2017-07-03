@@ -1,3 +1,8 @@
+[![Latest Stable Version](https://poser.pugx.org/ublaboo/aws-sdk-nette-extension/v/stable)](https://packagist.org/packages/ublaboo/aws-sdk-nette-extension)
+[![License](https://poser.pugx.org/ublaboo/aws-sdk-nette-extension/license)](https://packagist.org/packages/ublaboo/aws-sdk-nette-extension)
+[![Total Downloads](https://poser.pugx.org/ublaboo/aws-sdk-nette-extension/downloads)](https://packagist.org/packages/ublaboo/aws-sdk-nette-extension)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/ublaboo/help)
+
 # aws-sdk-nette-extension
 A Nette extension for the AWS SDK for PHP http://aws.amazon.com/sdkforphp/
 
