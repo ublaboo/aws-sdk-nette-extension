@@ -3,7 +3,7 @@
 	"type": "library",
 	"description": "A Nette extension for the AWS SDK for PHP http://aws.amazon.com/sdkforphp/",
 	"keywords": ["aws", "sdk", "amazon", "php", "nette", "extension", "di"],
-	"homepage": "http://ublaboo.paveljanda.com/aws-sdk-nette-extension",
+	"homepage": "https://ublaboo.org/aws-sdk-nette-extension",
 	"license": ["MIT"],
 	"support": {
 		"issues": "https://github.com/ublaboo/aws-sdk-nette-extension/issues"
