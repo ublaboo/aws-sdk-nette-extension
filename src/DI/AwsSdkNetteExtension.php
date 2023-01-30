@@ -19,7 +19,8 @@ class AwsSdkNetteExtension extends Nette\DI\CompilerExtension
 		'credentials' => [
 			'key' => NULL,
 			'secret' => NULL
-		]
+		],
+        'use_aws_shared_config_files' => true
 	];
 
 	/**

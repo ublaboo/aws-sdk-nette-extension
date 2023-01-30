@@ -38,6 +38,7 @@ aws:
 	credentials:
 		key: your_access_key
 		secret: your_secret_access_key
+	use_aws_shared_config_files: true|false
 ```
 			
 ## Usage
