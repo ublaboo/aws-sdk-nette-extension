@@ -29,7 +29,10 @@ Configure extension in your `config.neon` file:
 aws:
 	region: eu-west-1
 	version: latest
+
+	# settings for interacting with other then Amazon endpoints
 	endpoint: (optional - when ommited, Amazon AWS URL is used)
+	use_path_style_endpoint: true|false (optional - default=false)	
 ```
 
 And put your key and secret in your `config.local.neon` file (which should not be versioned)

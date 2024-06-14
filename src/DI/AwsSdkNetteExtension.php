@@ -21,7 +21,8 @@ class AwsSdkNetteExtension extends Nette\DI\CompilerExtension
 			'key' => NULL,
 			'secret' => NULL
 		],
-		'use_aws_shared_config_files' => true
+		'use_aws_shared_config_files' => true,
+		'use_path_style_endpoint' => false
 	];
 
 	/**
