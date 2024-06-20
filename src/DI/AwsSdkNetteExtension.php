@@ -16,11 +16,13 @@ class AwsSdkNetteExtension extends Nette\DI\CompilerExtension
 	private $defaults = [
 		'region' => NULL,
 		'version' => 'latest',
+		'endpoint' => NULL,
 		'credentials' => [
 			'key' => NULL,
 			'secret' => NULL
 		],
-		'use_aws_shared_config_files' => true
+		'use_aws_shared_config_files' => true,
+		'use_path_style_endpoint' => false
 	];
 
 	/**
